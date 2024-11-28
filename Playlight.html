@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 class="text">Welcome</h1>
+
+<button id="changer">Turn on Light</button>
+<button id="change">Turn off Light</button>
+
+
+
+<style>
+    .text{
+        color:blue;
+    }
+    
+    .change{
+        color:red;
+        
+    }
+    
+    .chan{
+        color:yellow;
+    }
+    
+    
+    
+</style>
+
+<br><br>
+  
+
+<script>
+   
+    let text = document.getElementById("changer");
+  text.addEventListener("click",turnOn)
+  
+  let texting = document.getElementById("change")
+  texting.addEventListener("click", turnOff)
+  
+  
+  
+  
+  function turnOn(){
+      let first = document.getElementsByClassName("text")[0];
+      first.classList.add("change")
+      
+      }
+      
+      function turnOff(){
+          let second = document.getElementsByClassName("text")[0];
+          second.classList.add("chan")
+      }
+      
+      
+      
+      
+      
+      
+      for(count = 1; count < 10; count++ ){
+          document.write(count," I'm coming <br />")
+      }
+      
+      
+      
+      
+      
+      
+      
+  
+    
+</script>
+
+</body>
+</html>
